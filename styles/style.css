@@ -220,40 +220,60 @@ nav {
   border-radius: 1rem;
   background: #fff;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .product-img {
   width: 100%;
   height: 16rem;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
   object-fit: cover;
   object-position: center;
 }
 
+.product-details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .product-name {
+  font-size: 1.25rem;
+  font-style: normal;
   font-weight: 600;
-  line-height: 1rem;
-  margin-bottom: 1.2rem;
+  line-height: 130%;
+}
+.product-description {
+  color: #525866;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
 .product-price {
   color: var(--color-gray);
   font-weight: 500;
   line-height: 1rem;
-  margin-bottom: 1rem;
   font-family: verdana;
   font-size: 1.2rem;
 }
 
 .rating-container {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: space-between;
+  gap: 6px;
+  justify-content: flex-start;
 }
 
 .rating-container svg {
-  width: 2rem;
+  width: 17.12px;
 }
 .rating-container h4 {
   display: inline;
@@ -261,6 +281,65 @@ nav {
   font-weight: 500;
   color: var(--color-gray);
   font-family: verdana;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price-small {
+  font-family: verdana;
+  color: #99a0ae;
+  font-feature-settings: "liga" off;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: line-through;
+}
+
+.product-price-big {
+  font-family: verdana;
+  color: var(--color-black);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cart-img {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.see-all-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* featured product section styling */
+.featured-product-container {
+  padding: 0 1rem;
+  margin-bottom: 6rem;
 }
 
 /* responsive styling */
